@@ -1,30 +1,30 @@
 const express = require('express')
 const app = express()
 
-const hostname = '192.168.0.9'   // set constants
+const hostname = '0.0.0.0'   // set constants
 const port = 3002
 
 app.get('/', function (req, res) {
-  res.send('Welcome home!')
+  res.send('<p style="color:red">Welcome home!<p>')
 })
 
 app.get('/hello', (req, res) => {
-  res.send('Hello Im SAI KIRAN')
+  res.send('<p style="color:green">Hello Im SAI KIRAN</p>')
 })
 
-app.get('/big',  (req, res) =>{
+app.get('/bang',  (req, res) =>{
   res.send('<h1>Big bang!</h1>')
 })
 
 app.get('/greeting',  (req, res) =>{
-  res.send('Hello!  ')
+  res.send('<h2>Hello! and Welcome</h1>')
 })
 
 app.get('/buddy',  (req, res) =>{
-  res.send('Hi Buddy ')
+  res.send('<h2>Hi Buddy </h2>')
 })
 app.get('/class',  (req, res) =>{
-  res.send('This is webapps class ')
+  res.send('<h1>This is webapps class<h1> ')
 })
 
 // handle non-existant routes
