@@ -9,19 +9,22 @@ app.get('/', function (req, res) {
 })
 
 app.get('/hello', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello Im SAI KIRAN')
 })
 
 app.get('/big',  (req, res) =>{
-  res.send('<h1>Hello World!</h1>')
+  res.send('<h1>Big bang!</h1>')
 })
 
-app.get('/greeting/:id',  (req, res) =>{
-  res.send('Hello! The id was ' + req.params.id)
+app.get('/greeting',  (req, res) =>{
+  res.send('Hello!  ')
 })
 
-app.get('/yo/:buddy',  (req, res) =>{
-  res.send('<h1>Yo, ' + req.params.buddy + '!</h1>')
+app.get('/buddy',  (req, res) =>{
+  res.send('Hi Buddy ')
+})
+app.get('/class',  (req, res) =>{
+  res.send('This is webapps class ')
 })
 
 // handle non-existant routes
