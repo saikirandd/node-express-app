@@ -8,22 +8,22 @@ app.get('/', function (req, res) {
   res.send('Welcome home!')
 })
 
-app.get('/hello', (req, res) => {
+app.get('./hello', (req, res) => {
   res.send('Hello Im SAI KIRAN')
 })
 
-app.get('/big',  (req, res) =>{
+app.get('./big',  (req, res) =>{
   res.send('<h1>Big bang!</h1>')
 })
 
-app.get('/greeting',  (req, res) =>{
+app.get('./greeting',  (req, res) =>{
   res.send('Hello!  ')
 })
 
-app.get('/buddy',  (req, res) =>{
+app.get('./buddy',  (req, res) =>{
   res.send('Hi Buddy ')
 })
-app.get('/class',  (req, res) =>{
+app.get('./class',  (req, res) =>{
   res.send('This is webapps class ')
 })
 
